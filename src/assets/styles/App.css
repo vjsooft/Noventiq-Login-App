@@ -1,0 +1,166 @@
+.App {
+  background: #e8ecf1;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+}
+.App-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+.form-wrapper {
+  text-align: center;
+}
+.form-inner-wrapper{
+  max-width: 360px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  background: #fff;
+  padding: 15px 20px;
+}
+.form-wrapper .form-group{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.form-wrapper .form-group>label{
+  font-weight: bold;
+  font-size: 20px;
+  flex-basis: 30%;
+  padding-top: 8px;
+  text-align: left;
+}
+.form-wrapper .form-control-input {
+  flex-basis: 70%;
+  position: relative;
+}
+.form-wrapper .form-control-input>span {
+  position: absolute;
+  left: 10px;
+  top: 9px;
+  opacity: 0.5;
+  font-size: 20px;
+}
+.form-wrapper .form-control, 
+.form-wrapper .form-group select{
+  font-size: 16px;
+  line-height: 25px;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 80%;
+  padding: 7px 10px 7px 35px;
+  display: block;
+}
+.forgot-link>p {
+  margin: 0 0 10px 0;
+  text-decoration: underline;
+  text-align: center;
+  cursor: pointer;
+}
+.form-wrapper .form-group.land-drop .select-language {
+  width: 61%;
+}
+.form-wrapper .form-group.land-drop{
+  justify-content: flex-start;
+}
+
+.form-btn {
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 95px;
+  border: 1px solid #000;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.switch-btn {
+  text-align: center;
+  width: 45px;
+  margin: 0 auto;
+}
+.switch-btn input {
+  display: block;
+  opacity: 0;
+}
+.switch-btn label {
+  position: relative;
+  width: 39px;
+  height: 20px;
+  display: inline-block;
+  background: #666666;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.switch-btn label:after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 18px;
+  height: 18px;
+  background: #FFF;
+  border-radius: 50%;
+  box-shadow: 1px 3px 6px #666666;
+}
+.switch-btn input:checked +  label {
+  background: #009900;
+}
+
+.switch-btn input:checked + label:after {
+  left: auto;
+  right: 2px;
+}
+.error-msg {
+  color: red;
+  margin: 0;
+  font-size: 11px;
+  text-align: left;
+}
+.eye-btn{
+  font-size: 16px;
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  top: 12px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .App-header>img{
+    width: 80%;
+  }
+  .form-wrapper {
+      padding: 0 15px;
+  }
+  .form-wrapper .form-group>label {
+      font-size: 15px;
+      padding-top: 10px;
+  }
+  .form-btn {
+      padding: 15px 55px;
+  }
+  .form-wrapper .form-control, .form-wrapper .form-group select {
+      font-size: 16px;
+      line-height: 20px;
+  }
+  .form-wrapper .form-control-input>span {
+      top: 8px;
+      font-size: 16px;
+  }
+  .eye-btn {
+      right: 0;
+      top: 9px;
+  }
+}
